@@ -1,0 +1,21 @@
+CREATE TABLE Customer_Address_Info (
+    Id                   INTEGER PRIMARY KEY AUTOINCREMENT
+                                 UNIQUE
+                                 NOT NULL,
+    Customer_Id          INTEGER REFERENCES Customer_Info (Id),
+    Company_Name         VARCHAR,
+    Mr_Or_Mrs            VARCHAR,
+    First_Name           VARCHAR,
+    Middle_Name          VARCHAR,
+    Last_Name            VARCHAR,
+    Phone1               VARCHAR,
+    Phone2               VARCHAR,
+    Phone3               VARCHAR,
+    Phone4               VARCHAR,
+    Email1               VARCHAR,
+    Email2               VARCHAR,
+    Email3               VARCHAR,
+    Email4               VARCHAR,
+    Invoice_Bill_Details VARCHAR,
+    Job_Title            VARCHAR
+);

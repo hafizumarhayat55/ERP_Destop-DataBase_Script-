@@ -1,0 +1,12 @@
+CREATE TABLE Customer_Additional_Info (
+    Id            INTEGER PRIMARY KEY AUTOINCREMENT
+                          NOT NULL
+                          UNIQUE,
+    Customer_Id   INTEGER REFERENCES Customer_Info (Id) 
+                          NOT NULL,
+    Customer_Type VARCHAR,
+    Contact       VARCHAR,
+    B_Day         VARCHAR,
+    Spouse_Name   VARCHAR,
+    Rep           VARCHAR
+);

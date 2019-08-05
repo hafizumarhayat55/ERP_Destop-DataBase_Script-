@@ -1,0 +1,9 @@
+CREATE TABLE adduser (
+    ID         INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR,
+    last_name  VARCHAR,
+    email      VARCHAR,
+    password   VARCHAR,
+    gender     VARCHAR,
+    user_name  VARCHAR
+);

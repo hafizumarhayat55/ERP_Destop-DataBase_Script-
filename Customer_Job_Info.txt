@@ -1,0 +1,13 @@
+CREATE TABLE Customer_Job_Info (
+    Id                 INTEGER PRIMARY KEY AUTOINCREMENT
+                               UNIQUE
+                               NOT NULL,
+    Customer_Id        INTEGER REFERENCES Customer_Info (Id) 
+                               NOT NULL,
+    Job_Description    VARCHAR,
+    Job_Type           VARCHAR,
+    Job_Status         VARCHAR,
+    Start_Date         DATE,
+    Projected_End_Date DATE,
+    End_Date           DATE
+);

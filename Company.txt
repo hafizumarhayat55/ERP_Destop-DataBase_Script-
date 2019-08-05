@@ -1,0 +1,19 @@
+
+CREATE TABLE Company_Info (
+    Company_Id    INTEGER NOT NULL
+                          PRIMARY KEY ASC AUTOINCREMENT
+                          UNIQUE,
+    Business_Name VARCHAR NOT NULL,
+    Business_Type VARCHAR,
+    State         VARCHAR,
+    Country       VARCHAR,
+    Industry      VARCHAR NOT NULL,
+    City          VARCHAR,
+    Phone         VARCHAR,
+    Created_By,
+    Created_Date,
+    Edit_By,
+    Edit_Date,
+    Logo          VARCHAR,
+    Zip           VARCHAR
+);

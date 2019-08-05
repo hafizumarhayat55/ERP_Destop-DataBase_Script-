@@ -1,0 +1,12 @@
+CREATE TABLE Customer_Info (
+    Id              INTEGER  PRIMARY KEY ASC AUTOINCREMENT
+                             NOT NULL
+                             UNIQUE,
+    Name            VARCHAR  NOT NULL,
+    Opening_Balance DECIMAL,
+    Opening_Date    DATETIME,
+    Created_By      VARCHAR,
+    Created_Date    DATETIME,
+    Edit_By         VARCHAR,
+    Edit_Date       DATETIME
+);

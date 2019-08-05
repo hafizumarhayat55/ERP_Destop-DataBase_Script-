@@ -1,0 +1,11 @@
+CREATE TABLE Textation (
+    Textation_ID INTEGER PRIMARY KEY ASC AUTOINCREMENT
+                         UNIQUE
+                         NOT NULL,
+    Company_ID   INTEGER REFERENCES Company_Info (Company_Id) ON DELETE CASCADE
+                                                              ON UPDATE CASCADE,
+    Name         VARCHAR,
+    Format       VARCHAR,
+    Symbol       VARCHAR,
+    Value        VARCHAR
+);
